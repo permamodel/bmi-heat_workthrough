@@ -13,21 +13,13 @@ Following
 Optionally, after the main list may be a list of items not yet committed to
 
 At the bottom is a list of completed features
+  - ideally with a note of how long implementation actually took
 
 #----------------------------------------------------------------------------
 
 FEATURES TO ADD to pfmodels
 
-Set up a directory structure with readme and list files, 1
-  - FEATURE_LIST_pfmodels.txt: this file, with features to add
-	- ISSUES_LIST_pfmodels.txt: list of known issues (bugs, unexpectedness)
-	- README_pfmodels.txt: list of things to know about for pfmodels
-	- WORK_pfmodels.txt: List of the work done on pfmodels
-
-Copy the bmi-python repository, 0
-  - git clone http://github.com/csdms/bmi-python
-
-Establish a github repository, 1
+Establish an offline github repository, 1
   - Mark Piper will set up for us under CSDMS github account
 	- Users:  
 	  - ScottInColorado@gmail.com
@@ -54,4 +46,16 @@ FEATURE IDEAS
 #----------------------------------------------------------------------------
 
 IMPLEMENTED FEATURES
+
+2015/1/7: SS
+Set up a directory structure with readme and list files, 1, 0.75
+  - FEATURE_LIST_pfmodels.txt: this file, with features to add
+	- ISSUES_LIST_pfmodels.txt: list of known issues (bugs, unexpectedness)
+	- README_pfmodels.txt: list of things to know about for pfmodels
+	- WORK_pfmodels.txt: List of the work done on pfmodels
+
+2015/1/7: SS
+Set up a directory structure with readme and list files, 1, 0.10
+Copy the bmi-python repository, 0
+  - git clone http://github.com/csdms/bmi-python
 

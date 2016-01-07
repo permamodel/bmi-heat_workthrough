@@ -42,4 +42,18 @@ Initialize local git repository
 	(Had 'git add'ed before .gitignore file, so .swp files were included,
 	  so new git commit after 'git rm'ing them)
 
+Get copy of bmi-python
+  git clone https://github.com/csdms/bmi-python
+	Note: this new .gitignore from bmi-python is awesome!  Added:
+	  - .*.swp 
+		- .ropeproject
+	Moved this .gitignore to ~/pfmodels/
+	remove the .git folder from the newly (here) created bmi-python directory:
+	  cd bmi-python
+		rm -rf .git
+		(Note: left the .gitmodules file here.  Not sure what to do with it)
+		cd ..
+	Updated local .git 
+	  git add -A .
+
 

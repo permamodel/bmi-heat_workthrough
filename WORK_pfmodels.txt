@@ -55,5 +55,34 @@ Get copy of bmi-python
 		cd ..
 	Updated local .git 
 	  git add -A .
+		git commit -am "Cloned bmi-python, using new .gitignore, removed bmi-python/.git"
+
+In bmi-python/, try nosetests (under Anaconda Python 2.7 environment)
+  30 tests okay!
+
+Create a local python package of bmi-heat
+  - From ~/pfmodels/bmi-python/heat, run:
+      python setup.py develop
+        - the 'develop' command means that if changes are made in the
+          bmi-heat module, they will be incorporated when any code
+          uses it
+  - Had some issues with relative imports, so had to change some import
+    statements from
+        from .heat import Heat
+      to
+        from heat import Heat
+
+Work in bmi-python/heat/; Attempt to run the heat model
+  Create a new file: runheat.py
+	Attempt to make as "Python3-like" as possible, per:
+	  http://python-future.org/imports.html
+	python runheat.py
+
+Create a new python file -- "runheat.py" -- to very simply experiment with
+  how to set up and run code that uses the bmi-heat module
+  - Run from ~/pfmodels/bmi-python/heat/
+      python runheat.py
+  - Outputs 'heatseries.dat' which can be read from ImageJ as
+    - Import->Raw, 32-bit real, 20wide x 10high with 100 images
 
 

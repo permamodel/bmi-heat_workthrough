@@ -32,8 +32,9 @@ if __name__ == '__main__':
     harr[0, :, :] = bheat._temperature
 
     for t in range(1, 100):
-        print("t: %d" % t)
+        # print("t: %d" % t)
 
+        # Advance the model and place the resulting output in the time series
         bheat.advance_in_time()
         harr[t, :, :] = bheat._temperature
 

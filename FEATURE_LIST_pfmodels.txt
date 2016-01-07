@@ -13,23 +13,21 @@ Following
 Optionally, after the main list may be a list of items not yet committed to
 
 At the bottom is a list of completed features
-  - ideally with a note of how long implementation actually took
+  - ideally with a note of how long implementation actually too
 
 #----------------------------------------------------------------------------
 
 FEATURES TO ADD to pfmodels
+
+Ensure that when working with the bmi-heat module, we use the 
+  bmi-python functions
+	- per suggestion by MP
 
 Establish an offline github repository, 1
   - Mark Piper will set up for us under CSDMS github account
 	- Users:  
 	  - ScottInColorado@gmail.com
 		- Elchin.Jafarov@colorado.edu
-
-Experiment with the bmi-heat module, 1+
-  - Work with a local copy
-  - Verify that the installation works
-	- Run the bmi-heat model and print some intermediate results
-	- Play with the model code to establish competency with it
 
 Begin implementation of simplest Nelson/Outcalt frost number model, 2+
   - Input is Tw and Th
@@ -58,4 +56,18 @@ Set up a directory structure with readme and list files, 1, 0.75
 Set up a directory structure with readme and list files, 1, 0.10
 Copy the bmi-python repository, 0
   - git clone http://github.com/csdms/bmi-python
+
+2015/1/7: SS
+Experiment with the bmi-heat module, 1+, 2.5
+  - Work with a local copy
+  - Verify that the installation works
+	- Run the bmi-heat model and print some intermediate results
+	- Play with the model code to establish competency with it
+	- Resulting code:
+	      ~/pymodels/bmi-python/heat/runheat.py
+			Run with (from Python 2.7)
+			  python runheat.py
+		  Used imagej to examine the resulting (100-time x 10j x 20i) array
+			  - shows nice diffusion from a held-constant boundary value
+
 

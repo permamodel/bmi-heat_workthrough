@@ -1,0 +1,22 @@
+
+ISSUE_LIST_pfmodels.txt
+
+The master list known or suspected "issues" with the permafrost models
+
+Each entry below should:
+ - be described, ideally so as to be reproduced
+ - have a date when reported
+ - optional sub-items that are comments or thoughts about the issue
+
+At the bottom is a list of resolved issues, including when they were resolved
+
+Note: This may be migrated to real issue management system at some point
+
+#----------------------------------------------------------------------------
+
+ISSUES of pfmodels
+
+#----------------------------------------------------------------------------
+
+RESOLVED ISSUES
+

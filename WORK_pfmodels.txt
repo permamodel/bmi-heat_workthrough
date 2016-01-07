@@ -1,57 +1,45 @@
 
-FEATURE_LIST_pfmodels.txt
+WORK_pfmodels.txt
 
-The master "to do" list for Elchin's permafrost models
+The master list of work done on the pfmodels project
 
 Each entry below should:
- - be prioritized 
- - have a time estimate, currently in work-hours
- - optional sub-items that are comments or 
-
-Following
-
-Optionally, after the main list may be a list of items not yet committed to
-
-At the bottom is a list of completed features
-
-#----------------------------------------------------------------------------
-
-FEATURES TO ADD to pfmodels
-
-Set up a directory structure with readme and list files, 1
-  - FEATURE_LIST_pfmodels.txt: this file, with features to add
-	- ISSUES_LIST_pfmodels.txt: list of known issues (bugs, unexpectedness)
-	- README_pfmodels.txt: list of things to know about for pfmodels
-	- WORK_pfmodels.txt: List of the work done on pfmodels
-
-Copy the bmi-python repository, 0
-  - git clone http://github.com/csdms/bmi-python
-
-Establish a github repository, 1
-  - Mark Piper will set up for us under CSDMS github account
-	- Users:  
-	  - ScottInColorado@gmail.com
-		- Elchin.Jafarov@colorado.edu
-
-Experiment with the bmi-heat module, 1+
-  - Work with a local copy
-  - Verify that the installation works
-	- Run the bmi-heat model and print some intermediate results
-	- Play with the model code to establish competency with it
-
-Begin implementation of simplest Nelson/Outcalt frost number model, 2+
-  - Input is Tw and Th
-	- Use framework as per bmi-heat under bmi-python
-	- Use Test Driven Development
+ - be dated
+ - describe what was done such that it could be re-done
+ - discuss why this was done, and if appropriate why something else wasn't done
 
 
 #----------------------------------------------------------------------------
-
-FEATURE IDEAS
-
-"Cheat sheet" for how to use git with this repository
+Previous
+  - a few discussions between Echin and Scott about what needs to be done
+	- a few discussions with Mark P about how to set up bmi-python and github
+	- Python notebook from Elchin with initial coding of Nelson/Outcalt model
+	  - ~/nelson
+	- Copy of GIPL code from Elchin
 
 #----------------------------------------------------------------------------
 
-IMPLEMENTED FEATURES
+Jan 7, 2016
+
+Initial documents created in this project: scotts::~/pfmodels/
+  README_pfmodels.txt
+  WORK_pfmodels.txt
+  FEATURE_LIST_pfmodels.txt
+  ISSUE_LIST_pfmodels.txt
+
+Initialize local git repository
+  git init
+  (moved and linked to Scott's Dropbox gits directory)
+	  mv .git ~/Desktop/scotts_gits/pfmodels_git
+		ln -s !$ .git
+	copied over a .gitignore file containing:
+	    __pycache__
+			.ropeproject
+			*.swp
+			*.pyc
+	git add -A .
+	git commit -am "Initial commit of pymodels.  First versions of help files included"
+	(Had 'git add'ed before .gitignore file, so .swp files were included,
+	  so new git commit after 'git rm'ing them)
+
 
